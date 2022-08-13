@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Jan",
+        "Investment": 120
+        
+    },
+    {
+        "name": "Feb",
+        "Investment": 50
+        
+    },
+    {
+        "name": "Mar",
+        "Investment": 70
+        
+    },
+    {
+        "name": "Apr",
+        "Investment": 95
+        
+    },
+    {
+        "name": "May",
+        "Investment": 200
+        
+    },
+    {
+        "name": "Jun",
+        "Investment": 300
+        
+    },
+    {
+        "name": "Jul",
+        "Investment": 150
+        
+    },
+    {
+        "name": "Agu",
+        "Investment": 190
+        
+    },
+    {
+        "name": "Sep",
+        "Investment": 140
+        
+    },
+    {
+        "name": "Oct",
+        "Investment": 180
+        
+    },
+    {
+        "name": "Nov",
+        "Investment": 120
+        
+    }
+]

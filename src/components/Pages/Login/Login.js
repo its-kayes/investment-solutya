@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from "react-router-dom";
 import auth from '../../../firebase.init';
 import Spinier from '../../Shared/Spinier';
+import SocialLogin from './SocialLogin';
 
 
 const Login = () => {
@@ -91,6 +92,7 @@ const Login = () => {
                             <div class="form-control mt-6">
                                 <button type='submit' class="btn btn-primary">Login</button>
                             </div>
+                            <SocialLogin />
                         </div>
                     </form>
                 </div>

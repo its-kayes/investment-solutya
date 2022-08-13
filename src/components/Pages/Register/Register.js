@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from "../../../firebase.init"
 import { useState } from 'react';
 import Spinier from '../../Shared/Spinier';
+import SocialLogin from '../Login/SocialLogin';
 // import { async } from '@firebase/util';
 
 const Register = () => {
@@ -45,6 +46,20 @@ const Register = () => {
         }
     }
 
+    let myFunction = () => {
+        console.log("click");
+        var x = document.getElementById("myInputx");
+        var y = document.getElementById("myInputy");
+        if (x.type === "password" || y.type === "password") {
+            x.type = "text";
+            y.type = "text";
+        } else {
+            x.type = "password";
+            y.type = "password";
+
+        }
+    }
+
     if (error) {
         console.log(error);
     }
@@ -82,12 +97,16 @@ const Register = () => {
                                 <label class="label">
                                     <span class="label-text">Password</span>
                                 </label>
-                                <input type="password" placeholder="password" name='password' class="input input-bordered" />
+                                <input type="password" placeholder="password" name='password' id='myInputx' class=" Inputx input input-bordered" />
                                 <label class="label">
                                     <span class="label-text">Confirm Password</span>
                                 </label>
-                                <input type="password" placeholder="conPassword" name='conPassword' class="input input-bordered" />
+                                <input type="password" placeholder="confirm password" name='conPassword' id='myInputy' class=" input input-bordered" />
 
+                                <div className='flex py-2 pl-1'>
+                                    <input type="checkbox" onClick={myFunction} />
+                                    <p className='pl-1'> Show Password </p>
+                                </div>
 
                                 <label class="label">
                                     <Link to='/login' class="label-text-alt link link-hover"> Already Have Account ?</Link>
@@ -95,10 +114,10 @@ const Register = () => {
                                 {/* <p> {passError === true  'Pass error'} </p> */}
                                 {
                                     passError === true
-                                    ?
-                                    <i className='flex justify-center text-red-600 font-bold'> Password Doesn't' Match  </i>
-                                    :
-                                    <p> </p>
+                                        ?
+                                        <i className='flex justify-center text-red-600 font-bold'> Password Doesn't' Match  </i>
+                                        :
+                                        <p> </p>
                                     // setPassError(false)
                                 }
                                 {/* <label class="label">
@@ -107,6 +126,7 @@ const Register = () => {
                             </div>
                             <div class="form-control mt-6">
                                 <button type='submit' class="btn btn-primary">Register</button>
+                                <SocialLogin />
                             </div>
                         </form>
                     </div>

@@ -25,7 +25,7 @@ const Navbar = () => {
                         </label>
                         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             <li><i> <Link to='/'> Home </Link> </i></li>
-                            <li tabindex="0">
+                            {/* <li tabindex="0">
                                 <i class="justify-between">
                                     Parent
                                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
@@ -34,8 +34,8 @@ const Navbar = () => {
                                     <li><i> Point </i></li>
                                     <li><i> Point </i></li>
                                 </ul>
-                            </li>
-                            <li><i> Point </i></li>
+                            </li> */}
+                            <li><i> <Link to='/dashboard'> Dashboard </Link> </i></li>
                         </ul>
                     </div>
                     <i class="btn btn-ghost normal-case text-xl"><img src="green-life-logo-removebg.png" width={50} height={20} alt="" />
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
                         <li><i> <Link to='/'> Home </Link> </i></li>
-                        <li tabindex="0">
+                        {/* <li tabindex="0">
                             <i>
                                 Parent
                                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
@@ -53,8 +53,8 @@ const Navbar = () => {
                                 <li><i> Point </i></li>
                                 <li><i> Point </i></li>
                             </ul>
-                        </li>
-                        <li><i> Point </i></li>
+                        </li> */}
+                        <li><i> <Link to='/dashboard'> Dashboard </Link> </i></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
